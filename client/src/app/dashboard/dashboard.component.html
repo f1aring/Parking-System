@@ -1,0 +1,15 @@
+
+<div>
+  <h2>Parking Form</h2>
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="number_plate">Number Plate:</label>
+      <input type="text" id="number_plate" formControlName="number_plate">
+    </div>
+    <div>
+      <label for="slot">Slot:</label>
+      <input type="number" id="slot" formControlName="slot">
+    </div>
+    <button type="submit" [disabled]="profileForm.invalid">Park Car</button>
+  </form>
+</div>
