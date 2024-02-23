@@ -21,7 +21,7 @@ export class ParkingService {
   }
 
   updateTime(id: string): Observable<Park>{
-    return this.http.put<Park>( this.url+id, {});
+    return this.http.put<Park>( this.url +'/'+id, {});
   }
   
 }

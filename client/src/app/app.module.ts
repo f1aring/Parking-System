@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ParkedVehiclesComponent } from './parked-vehicles/parked-vehicles.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    ParkedVehiclesComponent
   ],
   imports: [
     BrowserModule,

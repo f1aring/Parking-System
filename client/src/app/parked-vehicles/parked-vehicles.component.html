@@ -1,0 +1,6 @@
+<div class="list" *ngFor="let vehicle of park">
+    <p>{{vehicle.number_plate}}</p>
+    <p></p>
+    <button (click)="checkOut(vehicle._id)">Check Out</button>
+</div>
+<p>{{time}}</p>

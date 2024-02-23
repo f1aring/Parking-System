@@ -9,7 +9,7 @@ import { ParkingService } from '../parking.service';
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
-
+  message = '';
   constructor(private api: ParkingService){}
   public park: Park[] = [];
   
@@ -17,6 +17,9 @@ export class DashboardComponent {
     number_plate: new FormControl(''),
     slot: new FormControl(''),
   });
+  handleEvent(event: string) {
+    this.message = event;
+  }
   onSubmit() {
     // TODO: Use EventEmitter with form value
     
